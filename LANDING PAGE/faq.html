@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/PU_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palamuru University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+</head>
+<body>
+    <!------Faq PAGE--------->
+    <!--------first page-------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/PU-Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="course.html"><b>COURSE</b></a></li>
+                    <li><a href="Login.html"><b>LOGIN</b></a></li>
+                    <li><a href="register.html"><b>REGISTER</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                    <li><a href="faq.html"><b>FAQ</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Most Frequently Asked Questions</h1>
+    </section>
+    <!--------Faq page-------->
+    <section class="faq">
+        <h1>Frequently Asked Questions!</h1>
+        <div class="Faqs">
+        <div class="accordion">
+            <div class="row">
+                <div class="column">
+                    <div class="contentBx">
+                        <div class="question">What is the NAAC grade of Palamuru University?</div>
+                        <div class="answer">
+                            <p>The university is accredited by NAAC with a B grade and was approved by Union Grant Commission UGC.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="question">What is the history of Palamuru University?</div>
+                        <div class="answer">
+                            <p>Palamuru University has been established in the year 2008 as a State University by statutory
+                            enactment to cater to the growing requirements of Higher Education of the region in general and of
+                            Mahabubnagar district in particular.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="question">Where is the Palamuru University located in India?</div>
+                        <div class="answer">
+                            <p>Bandameedipally, Mahabubnagar, Telangana 509001.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="question">Is Palamuru University a private or govt. University?</div>
+                        <div class="answer">
+                            <p>Palamuru University has been established in the year 2008 as a State University by statutory 
+                            enactment to cater to the growing requirements of Higher Education of the region in general and 
+                            of Mahabubnagar district in particular.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="question">What are the main features of Palamuru University?</div>
+                        <div class="answer">
+                            <p>Palamuru University has 155 affiliated colleges and 3 constituent colleges. There are 8000 
+                            books, 300 donate books, and 10 periodical Journals in the central library.</p>
+                        </div>
+                    </div>
+                    <div class="contentBx">
+                        <div class="question">Which is the official website of Palamuru University established in India?</div>
+                        <div class="answer">
+                            <p>The official website of Palamuru University in India is https://palamuruuniversity.ac.in/</p>
+                        </div>
+                    </div>
+                </div>
+                <div class ="column"> 
+                    <img src="images/Faqs.jpg" style="width:350px; height: 280px;margin-top: 12px;margin-right: 20px;">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!----js file link of faq page -->
+    <script src="faq.js"></script>
+    <!----End js file link of faq page -->
+    <!--------End Faq page-------->
+
+    <!---- Footer page----->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Palamuru University has been established in the year 2008 as a State University by statutory enactment to cater to the growing<br> 
+        requirements of Higher Education in the region in general and of the Mahabubnagar district in particular.The University<br>started 
+        functioning from the academic year 2008-09 with the then PG College of Osmania University at Mahabubnagar as the nucleus,<br> where in 
+        five PG courses were being offered.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+            <p style="margin-bottom: 50px; font-weight: bold;">Made with <i class="fa fa-heart-o"></i> by Kaneez Sultana.</p>
+    </section>
+    <!---- End Footer page----->
+    <!------Javascript for Toggle Menu of first page------>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    <!------End Javascript for Toggle Menu of first page------>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/PU_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palamuru University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+</head>
+<body>
+    <!------REGISTER PAGE--------->
+    <!--------first page-------->
+    <section class="register-form">
+        <nav>
+            <a href="index.html"><img src="images/PU-Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="course.html"><b>COURSE</b></a></li>
+                    <li><a href="Login.html"><b>LOGIN</b></a></li>
+                    <li><a href="register.html"><b>REGISTER</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                    <li><a href="faq.html"><b>FAQ</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div id="register">
+            <!-- Form Wrap Start -->
+            <div class="form-wrap">
+              <h1>Sign Up</h1>
+              <!-- Form Start -->
+              <form>
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" name="firstname" id="first-name">
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" name="firstname" id="last-name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="firstname" id="first-name">
+                </div>
+                <div class="form-group">
+                  <label for="cpass">Confirm Password</label>
+                  <input type="password" name="firstname" id="first-name">
+                </div>
+                <button type="submit">Sign Up</button>
+                <p class="bottom-text">
+                  By Clicking the Sign Up Button, you agree to our
+                  <a href="#">Term & Conditions</a> and <a href="#">Primary Policy</a>
+                </p>
+              </form>
+              <!-- Form Close -->
+            </div>
+            <!-- Form Wrap Close -->
+            <footer>
+              <p>Already Have an Account? <a href="Login.html">Login Here</a></p>
+            </footer>
+          </div> 
+    </section>
+    <!-------END REGISTER PAGE-------->
+    <!---- Footer page----->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Palamuru University has been established in the year 2008 as a State University by statutory enactment to cater to the growing<br> 
+        requirements of Higher Education in the region in general and of the Mahabubnagar district in particular.The University<br>started 
+        functioning from the academic year 2008-09 with the then PG College of Osmania University at Mahabubnagar as the nucleus,<br> where in 
+        five PG courses were being offered.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+            <p style="margin-bottom: 50px; font-weight: bold;">Made with <i class="fa fa-heart-o"></i> by Kaneez Sultana.</p>
+    </section>
+    <!---- End Footer page----->
+    <!------Javascript for Toggle Menu of first page------>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    <!------End Javascript for Toggle Menu of first page------>
+
+    <!----END REGISTER PAGE--------->
+</body>
+</html>
